@@ -14,10 +14,10 @@
 <body>
     <div class="nav_bar">
 	<ul>
-		<li><a href="services">Services</a></li>
-		<li><a href="about">About Us</a></li>
-		<li><a href="gallery">Gallery</a></li>
-		<li><a href="contact">Contact Us</a></li>
+		<li><a href="services" class="nav1">Services</a></li>
+		<li><a href="about" class="nav2">About Us</a></li>
+		<li><a href="gallery" class="nav3">Gallery</a></li>
+		<li><a href="contact" class="nav4">Contact Us</a></li>
 	</ul>
     </div>
     <section class="header">
@@ -28,13 +28,12 @@
             	<li><a href="#gallery" class="gallery_link">Gallery</a></li>
             	<li><a href="#contact" class="contact_link">Contact Us</a></li>
             </ul>
+	    <a href="#" class="title"></a>
 	</div>
-	<div class="title_bar"><a href="#" class="title"></a></div>
-    </div>
     </section>
     <section id="services">
     	<div class="wrapper">
-        	<div class="empty_space"></div>
+            <div class="empty_space"></div>
             <span class="dotted_top"></span>
             <h1 class="section_title">Services</h1>
             <span class="dotted_bottom"></span>
@@ -100,19 +99,19 @@
         </div>
     </section>
     <script type="application/javascript">
-	$(".services_link").click(function(e){
+	$(".services_link, .nav1").click(function(e){
 		e.preventDefault();
 		$.scrollTo("#services", 1000);
 	});
-	$(".about_link").click(function(e){
+	$(".about_link, .nav2").click(function(e){
 		e.preventDefault();
 		$.scrollTo("#about", 1000);
 	});
-	$(".gallery_link").click(function(e){
+	$(".gallery_link, .nav3").click(function(e){
 		e.preventDefault();
 		$.scrollTo("#gallery", 1000);
 	});
-	$(".contact_link").click(function(e){
+	$(".contact_link, .nav4").click(function(e){
 		e.preventDefault();
 		$.scrollTo("#contact", 1000);
 	});
@@ -122,6 +121,8 @@
 		$(window).scroll(function() {
 			if($(window).scrollTop() >= 300)
 				$('.nav_bar').show();
+			else if($(window).scrollTop() <= 100)
+				$('.nav_bar').hide();
 		});
 	});
     </script>
