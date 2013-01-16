@@ -12,8 +12,10 @@
 </head>
 
 <body>
+  <div id="home">&nbsp;</div>
     <div class="nav_bar">
 	<ul>
+		<li><a href="home" class="nav0">Home</a></li>
 		<li><a href="services" class="nav1">Services</a></li>
 		<li><a href="about" class="nav2">About Us</a></li>
 		<li><a href="gallery" class="nav3">Gallery</a></li>
@@ -45,6 +47,41 @@
             <span class="dotted_top"></span>
             <h1 class="section_title">Services</h1>
             <span class="dotted_bottom"></span>
+            <br />
+            <strong style="font-size: 36px;">Interior</strong>
+            <ul style="font-size: 26px;">
+              <li>Bathroom renovation</li>
+              <li>Kitchen renovation</li>
+              <li>Basement development</li>
+              <li>Recreation room addition</li>
+              <li>Fireplace installation</li>
+              <li>Central air conditioning</li>
+              <li>Drywalling</li>
+              <li>Flooring and Carpet</li>
+              <li>Wall Removal</li>
+            </ul>
+            <br />
+            <strong style="font-size: 36px;">Exterior</strong>
+            <ul style="font-size: 26px;">
+                <li>Roof Shingle replacement
+                  <ul>
+                    <li>
+                    Insulation
+                    <p>
+                    Because the purpose of a roof is to protect people and their possessions from climatic elements, the insulating properties of a roof are a consideration in its structure and the choice of roofing material.</p>
+                    </li>
+                    <li>
+                      Drainage
+                      <p>The primary job of most roofs is to keep out water. The large area of a roof repels a lot of water, which must be directed in some suitable way, so that it does not cause damage or inconvenience.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>Deck and Railing removal and installation</li>
+                <li>Garage Construction</li>
+                <li>Patio covers</li>
+                <li>Fence Building </li>
+                <li>other miscellaneous services</li>
+            </ul>
         </div>
     </section>
     <section id="about">
@@ -63,28 +100,28 @@
         <span class="dotted_bottom"></span>
         <ul>
             <li>
-                <a href="/images/image1.jpg" title="">
-                    <img src="/images/thumb_image1.jpg" width="72" height="72" alt="" />
+                <a href="/gallery/image1.jpg" title="">
+                    <img src="/gallery/thumb_image1.jpg" width="72" height="72" alt="" />
                 </a>
             </li>
             <li>
-                <a href="/images/image2.jpg" title="">
-                    <img src="/images/thumb_image2.jpg" width="72" height="72" alt="" />
+                <a href="/gallery/image2.jpg" title="">
+                    <img src="/gallery/thumb_image2.jpg" width="72" height="72" alt="" />
                 </a>
             </li>
             <li>
-                <a href="/images/image3.jpg" title="">
-                    <img src="/images/thumb_image3.jpg" width="72" height="72" alt="" />
+                <a href="/gallery/image3.jpg" title="">
+                    <img src="/gallery/thumb_image3.jpg" width="72" height="72" alt="" />
                 </a>
             </li>
             <li>
-                <a href="images//image4.jpg" title="">
-                    <img src="/images/thumb_image4.jpg" width="72" height="72" alt="" />
+                <a href="gallery/image4.jpg" title="">
+                    <img src="/gallery/thumb_image4.jpg" width="72" height="72" alt="" />
                 </a>
             </li>
             <li>
-                <a href="/images/image5.jpg" title="">
-                    <img src="/images/thumb_image5.jpg" width="72" height="72" alt="" />
+                <a href="/gallery/image5.jpg" title="">
+                    <img src="/gallery/thumb_image5.jpg" width="72" height="72" alt="" />
                 </a>
             </li>
     </ul>
@@ -107,6 +144,11 @@
         </div>
     </section>
     <script type="application/javascript">
+	$(".nav0").click(function(e){
+		e.preventDefault();
+		$.scrollTo("#home", 1000);
+	});
+
 	$(".services_link, .nav1").click(function(e){
 		e.preventDefault();
 		$.scrollTo("#services", 1000);
