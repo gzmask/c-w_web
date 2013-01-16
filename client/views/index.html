@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>C & W</title>
+<SocketStream/>
+<script type="text/javascript">
+	$(function() {
+        $('#gallery a').lightBox();
+    });
+</script>
+</head>
+
+<body>
+	<section class="header">
+	<div class="nav">
+    	<ul>
+       	    <li><a href="#services" class="services_link">Services</a></li>
+            <li><a href="#about" class="about_link">About Us</a></li>
+            <li><a href="#gallery" class="gallery_link">Gallery</a></li>
+            <li><a href="#contact" class="contact_link">Contact Us</a></li>
+        </ul>
+        <div class="title_bar"><a href="#" class="title"></a></div>
+    </div>
+    </section>
+    <section id="services">
+    	<div class="wrapper">
+        	<div class="empty_space"></div>
+            <span class="dotted_top"></span>
+            <h1 class="section_title">Services</h1>
+            <span class="dotted_bottom"></span>
+        </div>
+    </section>
+    <section id="about">
+    	<div class="wrapper">
+        <div class="empty_space"></div>
+        <span class="dotted_top"></span>
+        <h1 class="section_title">About</h1>
+        <span class="dotted_bottom"></span>
+        </div>
+    </section>
+    <section id="gallery">
+    	<div class="wrapper">
+        <div class="empty_space"></div>
+        <span class="dotted_top"></span>
+        <h1 class="section_title">Gallery</h1>
+        <span class="dotted_bottom"></span>
+        <ul>
+            <li>
+                <a href="/images/image1.jpg" title="">
+                    <img src="/images/thumb_image1.jpg" width="72" height="72" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="/images/image2.jpg" title="">
+                    <img src="/images/thumb_image2.jpg" width="72" height="72" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="/images/image3.jpg" title="">
+                    <img src="/images/thumb_image3.jpg" width="72" height="72" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="images//image4.jpg" title="">
+                    <img src="/images/thumb_image4.jpg" width="72" height="72" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="/images/image5.jpg" title="">
+                    <img src="/images/thumb_image5.jpg" width="72" height="72" alt="" />
+                </a>
+            </li>
+    </ul>
+        </div>
+    </section>
+    <section id="contact">
+   		<div class="wrapper">
+        <div class="empty_space"></div>
+        <span class="dotted_top"></span>
+        <h1 class="section_title">Contact</h1>
+        <span class="dotted_bottom"></span>
+        </div>
+    </section>
+    <section id="footer">
+   		<div class="wrapper">
+        <div class="empty_space"></div>
+        <span class="dotted_top"></span>
+        <h2 class="copyright">Copyrighted by C&W Renovations<br />and Improvement Ltd.</h2>
+        <span class="dotted_bottom"></span>
+        </div>
+    </section>
+    <script type="application/javascript">
+		$(".services_link").click(function(e){
+			e.preventDefault();
+			$.scrollTo("#services", 1000);
+		});
+		$(".about_link").click(function(e){
+			e.preventDefault();
+			$.scrollTo("#about", 1000);
+		});
+		$(".gallery_link").click(function(e){
+			e.preventDefault();
+			$.scrollTo("#gallery", 1000);
+		});
+		$(".contact_link").click(function(e){
+			e.preventDefault();
+			$.scrollTo("#contact", 1000);
+		});
+	</script>
+</body>
+</html>
