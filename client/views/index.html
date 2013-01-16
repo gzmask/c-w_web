@@ -12,15 +12,24 @@
 </head>
 
 <body>
-	<section class="header">
+    <div class="nav_bar">
+	<ul>
+		<li><a href="services">Services</a></li>
+		<li><a href="about">About Us</a></li>
+		<li><a href="gallery">Gallery</a></li>
+		<li><a href="contact">Contact Us</a></li>
+	</ul>
+    </div>
+    <section class="header">
 	<div class="nav">
-    	<ul>
-       	    <li><a href="#services" class="services_link">Services</a></li>
-            <li><a href="#about" class="about_link">About Us</a></li>
-            <li><a href="#gallery" class="gallery_link">Gallery</a></li>
-            <li><a href="#contact" class="contact_link">Contact Us</a></li>
-        </ul>
-        <div class="title_bar"><a href="#" class="title"></a></div>
+    	    <ul>
+       	    	<li><a href="#services" class="services_link">Services</a></li>
+            	<li><a href="#about" class="about_link">About Us</a></li>
+            	<li><a href="#gallery" class="gallery_link">Gallery</a></li>
+            	<li><a href="#contact" class="contact_link">Contact Us</a></li>
+            </ul>
+	</div>
+	<div class="title_bar"><a href="#" class="title"></a></div>
     </div>
     </section>
     <section id="services">
@@ -91,22 +100,30 @@
         </div>
     </section>
     <script type="application/javascript">
-		$(".services_link").click(function(e){
-			e.preventDefault();
-			$.scrollTo("#services", 1000);
+	$(".services_link").click(function(e){
+		e.preventDefault();
+		$.scrollTo("#services", 1000);
+	});
+	$(".about_link").click(function(e){
+		e.preventDefault();
+		$.scrollTo("#about", 1000);
+	});
+	$(".gallery_link").click(function(e){
+		e.preventDefault();
+		$.scrollTo("#gallery", 1000);
+	});
+	$(".contact_link").click(function(e){
+		e.preventDefault();
+		$.scrollTo("#contact", 1000);
+	});
+
+	$('.nav_bar').hide();
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			if($(window).scrollTop() >= 300)
+				$('.nav_bar').show();
 		});
-		$(".about_link").click(function(e){
-			e.preventDefault();
-			$.scrollTo("#about", 1000);
-		});
-		$(".gallery_link").click(function(e){
-			e.preventDefault();
-			$.scrollTo("#gallery", 1000);
-		});
-		$(".contact_link").click(function(e){
-			e.preventDefault();
-			$.scrollTo("#contact", 1000);
-		});
-	</script>
+	});
+    </script>
 </body>
 </html>
