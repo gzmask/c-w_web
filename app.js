@@ -1,5 +1,3 @@
-// My SocketStream 0.3 app
-
 var http = require('http'),
     ss = require('socketstream');
 
@@ -17,17 +15,20 @@ ss.http.route('/', function(req, res){
 });
 
 // Code Formatters
-ss.client.formatters.add(require('ss-stylus'));
+//ss.client.formatters.add(require('ss-stylus'));
 
 // Use server-side compiled Hogan (Mustache) templates. Others engines available
-ss.client.templateEngine.use(require('ss-hogan'));
+//ss.client.templateEngine.use(require('ss-hogan'));
 
 // Minimize and pack assets if you type: SS_ENV=production node app.js
 if (ss.env === 'production') ss.client.packAssets();
 
 // Start web server
 var server = http.Server(ss.http.middleware);
-server.listen(3000);
+if (ss.env === 'production')
+  server.listen(80);
+else
+  server.listen(3000);
 
 // Start SocketStream
 ss.start(server);
