@@ -202,10 +202,9 @@ body {
 /* homepage */
 #homepage {
 	width:100%;
-	height:500px;
+	min-height:500px;
 	position:static;
 	margin-top:320px;
-        z-index:20;
 }
 
 /* services */
