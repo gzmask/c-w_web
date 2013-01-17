@@ -6,9 +6,15 @@ body {
 	margin:0;
 	padding:0;
 	overflow:auto;
+  }
+.photo{
+  width:180px;
+  height:120px;
+  border:2px solid #ffffff;
+  border-radius:5px;
 }
 
-.wrapper {
+  .wrapper {
         font-family: sans-serif;
         font-color: white;
 	width:750px;
@@ -33,7 +39,8 @@ body {
 
 .section_title {
 	margin:0;
-	padding:0;
+	padding:12px;
+        background-color:#427686;
 	text-align:center;
 	color:#fff;
 }
@@ -202,7 +209,7 @@ body {
 /* homepage */
 #homepage {
 	width:100%;
-	min-height:500px;
+	min-height:800px;
 	position:static;
 	margin-top:320px;
 }
@@ -210,21 +217,21 @@ body {
 /* services */
 #services {
 	width:100%;
-	min-height:500px;
+	min-height:800px;
 	position:static;
 }
 
 /* about */
 #about {
 	width:100%;
-	min-height:500px;
+	min-height:800px;
 	position:static;
 }
 
 /* gallery */
 #gallery {
 	width:100%;
-	min-height:500px;
+	min-height:800px;
 	position:static;
 }
 
@@ -242,6 +249,16 @@ body {
 	min-height:500px;
 	position:static;
 }
+.staff_name {
+        font-size:20px;
+        font-family: sans-serif;
+}
+
+.staff_words {
+        font-size:20px;
+        font-family:cursive;
+}
+
 
 /* footer */
 #footer {
@@ -254,5 +271,6 @@ body {
 	margin:0;
 	padding:0;
 	text-align:center;
-	color:#fff;
+	color:#000;
+        font-size:18px;
 }
