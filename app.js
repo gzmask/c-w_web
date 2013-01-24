@@ -1,4 +1,5 @@
 var http = require('http'),
+    nodemailer = require("nodemailer"),
     ss = require('socketstream');
 
 // Define a single-page client called 'main'
@@ -25,7 +26,7 @@ if (ss.env === 'production') ss.client.packAssets();
 
 // Start web server
 var server = http.Server(ss.http.middleware);
-server.listen(80);
+server.listen(3000);
 
 // Start SocketStream
 ss.start(server);

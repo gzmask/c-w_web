@@ -294,3 +294,37 @@ a {
 	color:#fff;
         font-size:18px;
 }
+
+.estimate {
+  color: #fff;
+  font-size: 20px;
+  top: 390px; 
+  right: 50px;
+  padding-top: 2px;
+  padding-left: 50px;
+  width: 257px;
+  height: 324px;
+  background: url("/images/clip.png") no-repeat;
+  position: fixed;
+}
+
+form {
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+input, textarea, select {
+  border : 1px solid #fff;
+  padding : 5px;
+  background-color : #195680;
+  color : #fff;
+}
+
+input.submit {
+  background-color : #c00;
+  color : #ccc;
+  font : bold 14px/14px verdana, geneva, helvetica;
+  border : 2px solid #ccc;
+}
+

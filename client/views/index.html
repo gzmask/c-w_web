@@ -18,6 +18,10 @@
 <div id="background">
 <div id="background2">
   <div id="home">&nbsp;</div>
+  <div class="estimate">
+    Contact Us today!<br /> We provide <br /> 
+    <a href="contact" class="nav5">free estimates</a>
+  </div>
     <div class="nav_bar">
 	<ul>
 		<li><a href="home" class="nav0">Home</a></li>
@@ -211,6 +215,17 @@
           <br />
           <br />
           <iframe  style="margin-left: 150px;" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=3114+Dewdney+Avenue+east,+Regina,+SK,+Canada&amp;aq=&amp;sll=50.455113,-104.625775&amp;sspn=0.007528,0.017381&amp;ie=UTF8&amp;hq=&amp;hnear=3114+Dewdney+Ave+E,+Regina,+Saskatchewan+S4N+5K3,+Canada&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br />
+
+          <strong> Free Estimate </strong><br />
+          <form>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            First Name:<input type="text" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Last Name:<input type="text" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Service requested:<input type="textarea" />
+            <br />
+          </form>
         </div>
         </section>
         <br /> <br />
@@ -221,6 +236,11 @@
         </div>
     </section>
     <script type="application/javascript">
+	$(".nav5").click(function(e){
+		e.preventDefault();
+		$.scrollTo("#contact", 1000);
+	});
+
 	$(".nav0").click(function(e){
 		e.preventDefault();
 		$.scrollTo("#home", 1000);
